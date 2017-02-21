@@ -35,7 +35,7 @@ public class App
         put("/unicorn/:name/:location", (req, res) -> {
             for (Unicorn unicorn : unicorns) {
                 if (unicorn.getName() == req.params(":name")) {
-                    unicorn.setLocation(new Location(req.params(":location")));
+                    unicorn.getLocation().setName(req.params(":location"));
                 }
             }
 

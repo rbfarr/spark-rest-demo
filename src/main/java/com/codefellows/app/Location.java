@@ -3,7 +3,7 @@ package com.codefellows.app;
 /**
  * Created by Brad.Farr on 2/21/2017.
  */
-public class Location {
+public abstract class Location {
     private String name;
 
     public Location(String name) {
@@ -12,6 +12,10 @@ public class Location {
 
     public String getName() {
         return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     public String toString() {

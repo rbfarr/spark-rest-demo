@@ -16,9 +16,7 @@ public class Unicorn {
         return name;
     }
 
-    public void setLocation(Location location) {
-        this.location = location;
-    }
+    public Location getLocation() { return location; }
 
     public String toString() {
         return String.format("The unicorn named: %s is currently in the: %s", name, location);
